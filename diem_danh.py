@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 YOLO_MODEL_PATH = os.path.join(BASE_DIR, "models", "best.pt")
 EMBEDDINGS_SAVE_PATH = os.path.join(BASE_DIR, "database_embeddings.pkl")
-CNN_MODEL_NAME = "VGG-Face"
+CNN_MODEL_NAME = "ArcFace"
 DIST_THRESHOLD = 0.5
 
 
