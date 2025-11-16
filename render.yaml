@@ -4,11 +4,11 @@ services:
     env: python
     region: singapore
     plan: free
+    
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
 
-build:
-  nixpacks:
-    languages:
-      python:
-        version: "3.10"
+    nixpacks:
+      languages:
+        python:
+          version: "3.10"
