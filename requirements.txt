@@ -1,6 +1,6 @@
 flask==2.2.5
 werkzeug
-opencv-python
+opencv-python-headless
 numpy==1.26.4
 deepface
 ultralytics==8.0.196
