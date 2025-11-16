@@ -1,0 +1,10 @@
+flask==2.2.5
+werkzeug
+opencv-python
+numpy==1.26.4
+deepface
+ultralytics==8.0.196
+scipy
+onnxruntime
+
+gunicorn

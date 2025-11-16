@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Điểm Danh</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        #camera-feed {
+            width: 480px;
+            height: 360px;
+            background-color: #333;
+            border: 2px solid #555;
+            margin-bottom: 10px;
+        }
+        input, button {
+            width: 480px;
+            padding: 10px;
+            box-sizing: border-box; /* Đảm bảo padding không làm vỡ layout */
+            margin-bottom: 10px;
+        }
+        button {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+        #ket-qua {
+            width: 480px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            white-space: pre-wrap; /* Hiển thị JSON đẹp hơn */
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Test Điểm Danh</h2>
+
+    <form id="checkin-form">
+        <div>
+            <label for="mssv">MSSV</label>
+            <input type="text" id="mssv" name="mssv" required>
+        </div>
+
+        <div>
+            <label>Ảnh check-in (Từ Camera)</label>
+            <video id="camera-feed" autoplay playsinline></video>
+        </div>
+
+        <button type="submit" id="submit-btn">Chụp và Gửi điểm danh</button>
+    </form>
+
+    <h3>Kết quả:</h3>
+    <pre id="ket-qua"></pre>
+
+    <canvas id="capture-canvas" style="display:none;"></canvas>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>
