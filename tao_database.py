@@ -10,7 +10,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "database_sinh_vien")
 EMBEDDINGS_SAVE_PATH = os.path.join(BASE_DIR, "database_embeddings.pkl")
-CNN_MODEL_NAME = "VGG-Face"
+CNN_MODEL_NAME = "ArcFace"
 
 
 def create_database_embeddings():
